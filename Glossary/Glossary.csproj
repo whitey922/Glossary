@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{970819B8-5B1E-46B3-B77A-6522EBBA6B42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glossary</RootNamespace>
+    <AssemblyName>Glossary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Catigories.cs" />
+    <Compile Include="Classes\Exceptions\EmptySearch.cs" />
+    <Compile Include="Classes\Exceptions\EmptyTermException.cs" />
+    <Compile Include="Classes\Exceptions\InvalidEnglishTermException.cs" />
+    <Compile Include="Classes\Exceptions\InvalidRussianTermException.cs" />
+    <Compile Include="Classes\Exceptions\InvalidTermException.cs" />
+    <Compile Include="Classes\Term.cs" />
+    <Compile Include="Classes\Terms.cs" />
+    <Compile Include="Forms\AddingCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddingCategory.Designer.cs">
+      <DependentUpon>AddingCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddingTerms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddingTerms.Designer.cs">
+      <DependentUpon>AddingTerms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeCategory.Designer.cs">
+      <DependentUpon>ChangeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeleteCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeleteCategory.Designer.cs">
+      <DependentUpon>DeleteCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditingTerms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditingTerms.Designer.cs">
+      <DependentUpon>EditingTerms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Glossary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Glossary.Designer.cs">
+      <DependentUpon>Glossary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Idiot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Idiot.Designer.cs">
+      <DependentUpon>Idiot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddingCategory.resx">
+      <DependentUpon>AddingCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddingTerms.resx">
+      <DependentUpon>AddingTerms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeCategory.resx">
+      <DependentUpon>ChangeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeleteCategory.resx">
+      <DependentUpon>DeleteCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditingTerms.resx">
+      <DependentUpon>EditingTerms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Glossary.resx">
+      <DependentUpon>Glossary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Idiot.resx">
+      <DependentUpon>Idiot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\icons\search.png" />
+    <None Include="Properties\icons\language.png" />
+    <None Include="Properties\icons\Help.png" />
+    <None Include="Properties\icons\apply.png" />
+    <None Include="Properties\icons\import.png" />
+    <None Include="Properties\icons\export.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

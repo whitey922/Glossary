@@ -1,0 +1,14 @@
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\bin\Release\Glossary.exe.config
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\bin\Release\Glossary.exe
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\bin\Release\Glossary.pdb
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.Forms.AddingCategory.resources
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.Forms.AddingTerms.resources
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.Forms.ChangeCategory.resources
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.Forms.DeleteCategory.resources
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.Forms.EditingTerms.resources
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.Glossary.resources
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.Forms.Idiot.resources
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.Properties.Resources.resources
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.csproj.GenerateResource.Cache
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.exe
+C:\Users\Yegorov\Desktop\Dream Team\Glossary\Glossary\obj\Release\Glossary.pdb
